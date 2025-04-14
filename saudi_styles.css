@@ -1,0 +1,171 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg'); /* خلفية كامله */
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* تأكد من أن الخلفية ثابتة أثناء التمرير */
+    height: 100vh; /* يضمن أن الخلفية تغطي كامل الصفحة */
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 100, 0, 0.8); /* لون خلفية مع شفافية */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Centering the image inside a border (frame-like effect) */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 5px solid #006400; /* إضافة إطار حول الصورة */
+    border-radius: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%; /* جعل الصورة تأخذ عرض الإطار بالكامل */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* تأثير عند المرور على الصورة */
+}
+
+img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند مرور الماوس عليها */
+}
+
+/* Content section styling */
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية خفيفة لتفصل النصوص عن الخلفية */
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف حول المحتوى */
+}
+
+/* Styling for the description box */
+.description {
+    font-size: 22px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #006400; /* خلفية خضراء */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل خفيف حول الوصف */
+}
+
+/* Styling for the information section */
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* المسافة بين المربعات */
+    margin-top: 20px;
+}
+
+.info-item {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #006400;
+    border-radius: 8px;
+    width: 200px; /* أصغر حجم للمربعات */
+    text-align: center;
+    background-color: rgba(0, 100, 0, 0.1);
+    transition: background-color 0.3s ease; /* تأثير خلفية عند المرور على العناصر */
+}
+
+.info-item h3 {
+    color: #006400;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-item p {
+    font-size: 16px;
+}
+
+/* Adding border to the title of information */
+h2 {
+    font-size: 28px;
+    color: #006400;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #006400;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Information Box */
+.contact-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف حول المربع */
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    color: #006400;
+}
+
+.contact-box p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Link styling */
+a {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* تأثير تغيير اللون عند المرور */
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 100, 0, 0.8); /* خلفية شفافة للتذييل */
+    color: white;
+}
+
+/* Animation for image movement */
+@keyframes moveImage {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
